@@ -38,10 +38,11 @@ const WatchScreen = () => {
          <Col lg={8}>
             <div className='watchScreen__player'>
                <iframe
-                  src={`https://www.youtube.com/embed/${id}`}
+                  src={`https://www.youtube.com/embed/${id}?autoplay=1`}
                   frameBorder='0'
                   title={video?.snippet?.title}
                   allowFullScreen
+                  allow='autoplay'
                   width='100%'
                   height='100%'></iframe>
             </div>
